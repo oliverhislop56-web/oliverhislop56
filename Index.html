@@ -1,82 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website</title>
-  <style>
-    /* Basic reset */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; scroll-behavior: smooth; }
-
-    /* Navigation bar */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #333;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-      z-index: 1000;
+  <title>AKEEM FATAI | Asset Brokerage</title>  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
-    nav a {
+
+    body {
+      background: #0d1117;
       color: #fff;
-      text-decoration: none;
+    }
+
+    header {
+      background: #111;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: gold;
+    }
+
+    nav a {
       margin: 0 15px;
+      text-decoration: none;
+      color: #ccc;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: gold;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
       font-weight: bold;
     }
-    nav a:hover { text-decoration: underline; }
 
-    /* Sections */
-    section {
-      min-height: 100vh;
-      padding: 80px 20px 20px; /* top padding to avoid nav overlap */
+    .section {
+      padding: 50px 20px;
     }
-    #home { background: #f4f4f4; }
-    #about { background: #e8e8e8; }
-    #services { background: #dcdcdc; }
-    #contact { background: #ccc; }
 
-    /* Section titles */
-    h1 { margin-bottom: 20px; }
-  </style>
-</head>
-<body>
+    .section h2 {
+      margin-bottom: 20px;
+      color: gold;
+    }
 
-  <!-- Navigation -->
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    .card p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      margin-top: 30px;
+    }
+  </style></head><body><header>
+  <h1>AKEEM FATAI</h1>
   <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
+    <a href="#">Home</a>
+    <a href="#cars">Cars</a>
+    <a href="#properties">Properties</a>
+    <a href="#assets">Assets</a>
     <a href="#contact">Contact</a>
   </nav>
+</header><section class="hero">
+  <h2>Global Asset Brokerage & Sales</h2>
+  <p>Cars • Real Estate • Industrial Assets • Minerals</p>
+  <br>
+  <a class="btn" href="https://wa.me/234XXXXXXXXXX">Contact on WhatsApp</a>
+</section><section class="section" id="cars">
+  <h2>Cars for Sale</h2>
+  <div class="grid"><div class="card">
+  <img src="https://via.placeholder.com/300" alt="car">
+  <h3>Toyota Camry 2020</h3>
+  <p>Price: ₦12,000,000</p>
+  <a class="btn" href="#">View Details</a>
+</div>
 
-  <!-- Sections -->
-  <section id="home">
-    <h1>Home</h1>
-    <!-- Paste home page content here -->
-    <p>Welcome to our website!</p>
-  </section>
+<div class="card">
+  <img src="https://via.placeholder.com/300" alt="car">
+  <h3>Lexus RX 350</h3>
+  <p>Price: ₦18,000,000</p>
+  <a class="btn" href="#">View Details</a>
+</div>
 
-  <section id="about">
-    <h1>About</h1>
-    <!-- Paste about page content here -->
-    <p>About our business.</p>
-  </section>
+  </div>
+</section><section class="section" id="properties">
+  <h2>Properties</h2>
+  <div class="grid"><div class="card">
+  <img src="https://via.placeholder.com/300" alt="house">
+  <h3>Luxury 4 Bedroom Duplex</h3>
+  <p>Location: Lagos</p>
+  <a class="btn" href="#">View Details</a>
+</div>
 
-  <section id="services">
-    <h1>Services</h1>
-    <!-- Paste services page content here -->
-    <p>Here are the services we offer.</p>
-  </section>
+  </div>
+</section><section class="section" id="assets">
+  <h2>Industrial & Mineral Assets</h2>
+  <div class="grid"><div class="card">
+  <img src="https://via.placeholder.com/300" alt="asset">
+  <h3>Oil Rich Land</h3>
+  <p>Verified Resource Location</p>
+  <a class="btn" href="#">View Details</a>
+</div>
 
-  <section id="contact">
-    <h1>Contact</h1>
-    <!-- Paste contact page content here -->
-    <p>Contact us at example@email.com</p>
-  </section>
+<div class="card">
+  <img src="https://via.placeholder.com/300" alt="ship">
+  <h3>Abandoned Cargo Ship</h3>
+  <p>Available for Acquisition</p>
+  <a class="btn" href="#">View Details</a>
+</div>
 
-</body>
+  </div>
+</section><section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>Phone: +234 XXX XXX XXXX</p>
+  <p>Email: info@akeemfatai.com</p>
+</section><footer>
+  <p>© 2026 AKEEM FATAI. All Rights Reserved.</p>
+</footer></body>
 </html>
